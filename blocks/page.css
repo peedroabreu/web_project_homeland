@@ -1,0 +1,20 @@
+.page {
+  max-width: auto;
+  min-height: 1883px;
+  font-family: "Inter", "Sans-serif";
+  width: 100%;
+  background: rgba(42, 44, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 999px) {
+  .page {
+    min-height: 1659px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page {
+    min-height: 1550px;
+  }
+}
