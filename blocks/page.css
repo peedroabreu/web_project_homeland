@@ -1,21 +1,22 @@
 .page {
-  width: auto;
-
+  max-width: 80rem;
   font-family: "Inter", "Sans-serif";
-
-  background: rgba(42, 44, 47, 1);
+  background-color: rgba(42, 44, 47, 1);
   color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .page {
-    min-height: 1659px;
+    max-width: 20rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .page {
-    min-height: 1550px;
+    max-width: 48rem;
   }
 }
