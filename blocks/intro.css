@@ -46,7 +46,6 @@
 @media screen and (max-width: 1024px) {
   .intro {
     padding-left: 24px;
-    text-align: center;
   }
 
   .intro__title {
