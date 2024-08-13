@@ -8,3 +8,9 @@
   align-items: center;
   margin: auto;
 }
+
+@media screen and (max-width: 544px) {
+  .page {
+    max-width: fit-content;
+  }
+}
