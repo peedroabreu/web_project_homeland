@@ -19,14 +19,17 @@
   margin-right: 0;
 }
 
-.place__image_foto:hover {
+.place__image:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
   box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  filter: brightness(50%);
 }
 
 .place__frame {
-  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
@@ -40,7 +43,7 @@
 }
 
 .place__frame:hover {
-  background-image: linear-gradient(
+  background: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
     rgba(0, 58, 123, 0.25) 99.98%
