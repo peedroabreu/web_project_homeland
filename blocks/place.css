@@ -20,8 +20,8 @@
 }
 
 .place__image:hover {
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-  filter: brightness(50%);
+  opacity: 50%;
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 .place__frame {
