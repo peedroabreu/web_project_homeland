@@ -34,12 +34,10 @@
 
 @media screen and (max-width: 1024px) {
   .lead__title {
-    font-family: Inter;
-    font-size: 75px;
+    font-size: 45px;
     font-weight: 900;
-    line-height: 79px;
+    line-height: 49px;
     text-align: center;
-    width: 530px;
   }
 
   .lead__subtitle {

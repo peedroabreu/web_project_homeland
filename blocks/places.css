@@ -1,0 +1,159 @@
+.places {
+  max-width: 984px;
+}
+
+.places__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title ."
+    "title artists"
+    "img description"
+    "button description"
+    ". description";
+  margin-bottom: 80px;
+}
+
+.places__title {
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  grid-area: title;
+  max-width: 460px;
+}
+
+.places__image {
+  grid-area: img;
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 48px;
+}
+
+.places__image:hover {
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 50%;
+}
+
+.places__content-text {
+  margin-top: 48px;
+  margin-left: 40px;
+
+  grid-area: artists;
+}
+
+.places__artists {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: 0.12em;
+  color: rgba(170, 170, 170, 1);
+}
+
+.places__artist {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.23;
+}
+
+.places__description {
+  grid-area: description;
+  margin-left: 40px;
+}
+
+.places__paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.63;
+  margin-top: 0;
+}
+
+.places__button {
+  grid-area: button;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 1);
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  text-decoration: none;
+  max-width: 356px;
+  text-align: center;
+  padding-top: 13px;
+  height: 48px;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.places__button:hover {
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .places__card {
+    margin-bottom: 0;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+
+  .places__image {
+    width: 340px;
+  }
+
+  .places__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .places {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .places__card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "title" "artists" "img" "description" "description" "button";
+  }
+
+  .places__image {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .places__title {
+    font-size: 32px;
+    line-height: 1.09;
+    font-weight: 900;
+    padding-left: 16px;
+  }
+
+  .places__paragraph {
+    padding-right: 16px;
+  }
+
+  .places__button {
+    font-size: 14px;
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .places__content-text {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}

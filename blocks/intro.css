@@ -1,8 +1,6 @@
 .intro {
   display: flex;
   flex-direction: column;
-
-  padding-top: 92px;
 }
 
 .intro__title {
