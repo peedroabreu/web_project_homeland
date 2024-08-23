@@ -1,5 +1,6 @@
 .places {
   max-width: 984px;
+  margin: 0 auto;
 }
 
 .places__card {
@@ -78,7 +79,7 @@
   font-weight: 600;
   line-height: 1.21;
   text-decoration: none;
-  max-width: 356px;
+
   text-align: center;
   padding-top: 13px;
   height: 48px;
