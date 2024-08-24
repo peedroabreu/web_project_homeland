@@ -19,8 +19,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
-    width: 720px;
+    width: 100%;
     padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -29,10 +30,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-    width: 288px;
-  }
-
-  .photogrid__item_imagem {
-    padding-left: 0;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
   }
 }
